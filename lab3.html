@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3 - Form HTML</title>
+    <link rel="stylesheet" href="./form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <div class="form-contact">
+            <h1 class="tag">Get in <span class="touch">touch</span></h1>
+            <br><br>
+            <p>
+                Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
+                molestie vel, ornare non id blandit netus.
+            </p>
+            <br>
+            <form class="form-content">
+                <input class="input-form" type="text" placeholder="&nbsp Contact name">
+                <input class="input-form" type="text" placeholder="&nbsp Street">
+                <div class="city">
+                    <input class="input-form" type="text" placeholder="&nbsp City">
+                    <input class="input-form" type="number" placeholder="&nbsp Postcode">
+                </div>
+                <input class="input-form" type="number" placeholder="&nbsp Contact Phone">
+                <input class="input-form" type="email" placeholder="&nbsp Email">
+                <input class="input-form" type="text" placeholder="&nbsp Let's talk about your idea">
+                <label class="input-file" for="upload">
+                    <div>
+                        <img src="./images.png" width="24px" height="24px" alt="">
+                        <span>&nbsp Upload Additional file</span>
+                    </div>
+                    <input type="file" id="upload" hidden>
+                </label>
+
+                <p>Attach file. File size of your documents should not exceed 10MB</p>
+                <div>
+                    <input type="checkbox" id="confirm">
+                    <label for="confirm">I want to protect my data by signing an NDA</label>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+
+                <div class="icon-wrapper">
+                    <div class="icon-item">
+                        <img src="./phone.svg" alt="">
+                        <div class="icon-text">
+                            <span>Phone</span>
+                            <span><a a href="#">0987654321</a></span>
+                        </div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./email.svg" alt="">
+                        <div class="icon-text">
+                            <span>E-Mail</span>
+                            <span><a href="#">ABC123@gmail.com</a></span>
+                        </div>
+                    </div>
+                    <div class="icon-item">
+                        <img src="./email.svg" alt="">
+                        <div class="icon-text">
+                            <span>HELPDESK</span>
+                            <span><a href="#">https://helpdesk.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14895.454672857642!2d105.7472546!3d21.0381403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455e940879933%3A0xcf10b34e9f1a03df!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1706272582375!5m2!1svi!2s"
+                width="638" height="819" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="layer"></div>
+    </div>
+</body>
+
+</html>
